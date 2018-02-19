@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Disturbance Level</h1>
+        <p class="lead">Select one of the disturbance levels below.</p>
+    </div>
+
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">little over average</h4>
+                </div>
+                <div class="card-body">
+                    <p>hit me when..</p>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>someone does not recognize the volume</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-blink="yellow">yellow light</button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">too loud to focus</h4>
+                </div>
+                <div class="card-body">
+                    <p>hit me when..</p>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>you are about to do something hard but can not focus due to loud noise</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary" data-blink="red">red light</button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">still too loud to focus</h4>
+                </div>
+                <div class="card-body">
+                    <p>hit me when..</p>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>you already hit the button to the left but the people around you are still too loud</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary" data-blink="purple">purple light</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <small class="d-block mb-3 text-muted">&copy; 2018</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="assets/js/page-index.min.js"></script>
+{% endblock %}
